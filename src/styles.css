@@ -1,0 +1,329 @@
+/* Resetting default margin and padding for all elements */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  background-color: #164863;
+}
+
+/* Header styles */
+header {
+  background-color: #164863;
+}
+
+.my_title {
+  background-color: #164863;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 90px;
+  line-height: 90px;
+  color: #ddf2fd;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .my_title {
+    font-size: 1.8rem; /* Adjust the font size for mobile devices */
+    height: 70px; /* You can also adjust other styles for mobile here */
+    line-height: 70px;
+  }
+}
+/* Navigation styles */
+nav {
+  background-image: url("images/developer_img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.other_nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #164863;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #ddf2fd;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+.other_nav a {
+  display: block;
+  text-decoration: none;
+  color: #164863;
+  padding-left: 10px;
+}
+.whoami-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whoami-main h2 {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 2px 2px 4px #9bbec8;
+}
+.whoami-main h2 a {
+  text-decoration: none;
+}
+
+.whoami-main h2 a:hover {
+  color: white;
+  background-color: black;
+}
+
+.whoami-main p {
+  text-align: justify;
+  padding: 10px;
+  color: #9bbec8;
+}
+
+.projects {
+  position: relative;
+  text-align: center;
+}
+.projects a {
+  text-decoration: none;
+  color: #fff;
+}
+.projects a:hover {
+  text-decoration: none;
+  color: #9bbec8;
+}
+
+.projects .slideshow-controls .dots-container,
+.ideas .slideshow-controls .dots-container,
+.books .slideshow-controls .dots-container,
+.hobby .slideshow-controls .dots-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.projects .slideshow-controls .lef,
+.projects .slideshow-controls .ryt {
+  color: white;
+}
+.ideas,
+.books {
+  margin: 30px;
+  padding: 4px;
+}
+
+.quote-container,
+.hobby-des {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quote,
+.hobby-des p {
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+}
+
+.hobby-des {
+  margin: 10px;
+  text-align: justify;
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-style: italic;
+  color: #555;
+}
+
+.book_summary p {
+  text-align: justify;
+  padding: 10px;
+  color: #ddf2fd;
+}
+.book_summary h2 {
+  background-color: white;
+  color: #164863;
+}
+
+.nav-li-item {
+  background-color: #427d9d;
+  height: 50px;
+  line-height: 50px;
+  color: #ddf2fd;
+  width: 150px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.nav-li-item a {
+  text-decoration: none;
+  color: #ddf2fd;
+  font-size: 1rem;
+}
+
+.nav-li-item:hover {
+  width: 100px;
+}
+
+/* Main content styles */
+.Tech_news {
+  background-color: #164863;
+  color: #ddf2fd;
+}
+
+.main-news-title {
+  text-align: center;
+  background-color: #427d9d;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+.Tech_news article {
+  background-color: #ddf2fd;
+  margin: 8px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.the_news {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* News headline styles */
+.news-headline {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #164863;
+  margin-bottom: 10px;
+}
+
+.news-headline a {
+  color: #164863;
+  text-decoration: none;
+  border-bottom: 1px solid #007bff;
+  transition: border-bottom 0.3s ease;
+}
+
+.news-headline a:hover,
+.news-headline a:focus {
+  border-bottom: 2px solid #0056b3;
+}
+/* Add this CSS to your stylesheet or within a style tag in the head of your HTML */
+
+.the_news {
+  position: relative;
+}
+
+.slideshow-controls {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.slideshow-controls .lef {
+  position: absolute;
+  bottom: 50%;
+  right: 90%;
+}
+
+.slideshow-controls .ryt {
+  position: absolute;
+  bottom: 50%;
+  left: 90%;
+}
+
+.dots-container {
+  display: flex;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* Style the active dot */
+.dot.active {
+  background-color: #555;
+}
+
+/* Image description styles */
+.img-des {
+  display: flex;
+  flex-direction: column;
+  background-color: #427d9d;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-des img,
+.img-des p {
+  width: 40%;
+  height: 40%;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: white;
+}
+
+/* Footer styles */
+footer {
+  background-color: #9bbec8;
+  text-align: center;
+  color: #164863;
+  font-size: 1rem;
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contact-info {
+  padding: 20px;
+}
+
+.contact-info p a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-info p a:visited {
+  color: #663399;
+}
+
+.contact-info p a:hover {
+  color: #427d9d;
+  text-decoration: underline;
+}
+
+.contact-info p a:active {
+  color: #000;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+}
