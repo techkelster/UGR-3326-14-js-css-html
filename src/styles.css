@@ -116,6 +116,7 @@ nav ul {
 .projects .slideshow-controls .ryt {
   color: white;
 }
+
 .ideas,
 .books {
   margin: 30px;
@@ -148,6 +149,19 @@ cite {
   font-style: italic;
   color: #555;
 }
+.read {
+  display: flex;
+  justify-content: center;
+}
+.btn_read {
+  display: block;
+  padding: 20px;
+  margin: 10px;
+  background-color: #007bff;
+  border-radius: 20px;
+  text-align: center;
+  width: 20%;
+}
 
 .book_summary p {
   text-align: justify;
@@ -157,6 +171,8 @@ cite {
 .book_summary h2 {
   background-color: white;
   color: #164863;
+  margin: 20px;
+  padding: 15px;
 }
 
 .nav-li-item {
@@ -262,7 +278,15 @@ cite {
   margin: 0 5px;
   cursor: pointer;
 }
-
+@media only screen and (min-width: 1025px) {
+  .Tech_news,
+  .books,
+  .projects,
+  .hobby {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
 /* Style the active dot */
 .dot.active {
   background-color: #555;
