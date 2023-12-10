@@ -47,7 +47,7 @@ nav ul {
   justify-content: center;
 }
 
-.other_nav {
+.other-nav {
   display: flex;
   justify-content: space-between;
   background-color: #164863;
@@ -58,7 +58,7 @@ nav ul {
   margin-bottom: 0;
 }
 
-.other_nav a {
+.other-nav a {
   display: block;
   text-decoration: none;
   color: #164863;
@@ -163,12 +163,12 @@ cite {
   width: 20%;
 }
 
-.book_summary p {
+.book-summary p {
   text-align: justify;
   padding: 10px;
   color: #ddf2fd;
 }
-.book_summary h2 {
+.book-summary h2 {
   background-color: white;
   color: #164863;
   margin: 20px;
