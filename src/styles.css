@@ -21,6 +21,18 @@ header {
   color: #ddf2fd;
   font-size: 2.5rem;
   margin-bottom: 0;
+  width: 95%;
+}
+.index-top {
+  display: flex;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 90px;
+  line-height: 90px;
+  color: #ddf2fd;
+  font-size: 2.5rem;
+  padding: 5px;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -285,6 +297,15 @@ cite {
   .hobby {
     margin: 0 auto;
     width: 50%;
+  }
+  .toggle {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .toggle {
+    display: none;
   }
 }
 /* Style the active dot */
