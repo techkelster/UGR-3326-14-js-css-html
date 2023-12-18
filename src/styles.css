@@ -290,7 +290,7 @@ cite {
   margin: 0 5px;
   cursor: pointer;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1030px) {
   .Tech_news,
   .books,
   .projects,

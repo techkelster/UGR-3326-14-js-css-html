@@ -24,7 +24,7 @@
     <main>
       <div class="ideas">
         <div class="quote-container">
-          <blockquote class="quote">
+          <blockquote class="quote" id="bel-desc">
             "The only limit to our realization of tomorrow will be our doubts of
             today."
             <cite>- Franklin D. Roosevelt</cite>
@@ -34,9 +34,9 @@
         <!-- Arrows and Dots for Image Sliding Direction -->
         <div class="slideshow-controls">
           <div class="dots-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span class="dot" onclick="slideShow(0, 'beliefs')"></span>
+            <span class="dot" onclick="slideShow(1, 'beliefs')"></span>
+            <span class="dot" onclick="slideShow(2, 'beliefs')"></span>
           </div>
         </div>
       </div>
@@ -96,5 +96,6 @@
     <div class="copyright">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

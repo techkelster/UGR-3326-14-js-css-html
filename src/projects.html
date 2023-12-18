@@ -25,23 +25,34 @@
       <div class="projects">
         <article class=".project-container">
           <h3 class="project-headline">
-            <a href="#">Weather Mobile App</a>
+            <a href="#" id="pro-link">Weather Mobile App</a>
           </h3>
           <figure>
-            <img src="images/projects.jpeg" alt="mobile project" width="100%" />
+            <img
+              src="images/weather_mobile.jpeg"
+              alt="mobile project"
+              width="100%"
+              id="pro-img"
+            />
           </figure>
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
         <div class="slideshow-controls">
-          <i class="fas fa-chevron-left lef"></i>
+          <i
+            class="fas fa-chevron-left lef"
+            onclick="slideShow('lef', 'projects')"
+          ></i>
           <!-- Left Arrow -->
-          <i class="fas fa-chevron-right ryt"></i>
+          <i
+            class="fas fa-chevron-right ryt"
+            onclick="slideShow('ryt', 'projects')"
+          ></i>
           <!-- Right Arrow -->
           <div class="dots-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span class="dot" onclick="slideShow(0, 'projects')"></span>
+            <span class="dot" onclick="slideShow(1, 'projects')"></span>
+            <span class="dot" onclick="slideShow(2, 'projects')"></span>
           </div>
         </div>
       </div>
@@ -101,5 +112,6 @@
     <div class="copyright">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

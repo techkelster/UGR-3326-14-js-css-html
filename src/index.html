@@ -13,11 +13,11 @@
   <body>
     <header>
       <div class="index-top">
-        <i class="toggle fas fa-times"></i>
+        <i class="toggle fas fa-times" id="dismiss" onclick="toggleMenu()"></i>
         <div class="my_title">Junior Software Engineer</div>
       </div>
       <nav class="index-nav">
-        <ul>
+        <ul id="nav-home">
           <li class="nav-li-item"><a href="whoami.html">Who am I</a></li>
           <li class="nav-li-item"><a href="projects.html">Projects</a></li>
           <li class="nav-li-item">
@@ -33,7 +33,7 @@
       <div class="the_news">
         <article class=".news-container">
           <h3 class="news-headline">
-            <a href="#"
+            <a href="#" id="news-headline"
               >Breakthrough in AI: Self-Learning Algorithms Redefine Machine
               Intelligence</a
             >
@@ -43,20 +43,21 @@
               src="images/tech.jpeg"
               alt="The tech news image from API"
               width="100%"
+              id="news-image"
             />
           </figure>
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
         <div class="slideshow-controls">
-          <i class="fas fa-chevron-left lef"></i>
+          <i class="fas fa-chevron-left lef" onclick="makeupdate()"></i>
           <!-- Left Arrow -->
-          <i class="fas fa-chevron-right ryt"></i>
+          <i class="fas fa-chevron-right ryt" onclick="makeupdate()"></i>
           <!-- Right Arrow -->
           <div class="dots-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span class="dot" onclick="makeupdate()"></span>
+            <span class="dot" onclick="makeupdate()"></span>
+            <span class="dot" onclick="makeupdate()"></span>
           </div>
         </div>
       </div>
@@ -116,5 +117,6 @@
     <div class="copyright">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

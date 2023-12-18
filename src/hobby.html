@@ -25,19 +25,24 @@
       <div class="hobby">
         <article class="hobby-co">
           <figure>
-            <img src="images/hobby.jpeg" alt="mobile project" width="100%" />
+            <img
+              id="ho-img"
+              src="images/hobby.jpeg"
+              alt="mobile project"
+              width="100%"
+            />
           </figure>
         </article>
 
         <!-- Arrows and Dots for Image Sliding Direction -->
         <div class="slideshow-controls">
           <div class="dots-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span class="dot" onclick="slideShow(0, 'hobby')"></span>
+            <span class="dot" onclick="slideShow(1, 'hobby')"></span>
+            <span class="dot" onclick="slideShow(2, 'hobby')"></span>
           </div>
         </div>
-        <div class="hobby-des">
+        <div class="hobby-des" id="ho-des">
           <p>
             Bike riding is my favorite hobby. It's a refreshing and meditative
             experience, allowing me to stay active, clear my mind, and find joy
@@ -102,5 +107,6 @@
     <div class="copyright">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

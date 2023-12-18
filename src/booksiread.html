@@ -29,6 +29,7 @@
               src="images/booksiread.jpeg"
               alt="mobile project"
               width="100%"
+              id="bo-img"
             />
           </figure>
         </article>
@@ -36,31 +37,31 @@
         <!-- Arrows and Dots for Image Sliding Direction -->
         <div class="slideshow-controls">
           <div class="dots-container">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+            <span class="dot" onclick="slideShow(0, 'books')"></span>
+            <span class="dot" onclick="slideShow(1, 'books')"></span>
+            <span class="dot" onclick="slideShow(2, 'books')"></span>
           </div>
         </div>
       </div>
 
       <section class="book-summary">
         <h2>Summary</h2>
-        <p>
+        <p id="bo-sum">
           "Rich Dad Poor Dad" is a personal finance and self-help book written
           by Robert T. Kiyosaki. The book, published in 1997, contrasts the
           financial philosophies and practices of two father figures in the
           author's life: his biological father (referred to as "Poor Dad") and
           the father of his childhood best friend (referred to as "Rich Dad").
         </p>
-        <p
-          >Overall, "Rich Dad Poor Dad" challenges conventional beliefs about
-          money and provides a perspective shift that encourages readers to
-          rethink their approach to wealth-building and financial independence.
-          The book has had a significant impact on many individuals seeking
-          financial education and entrepreneurial insights.</p
-        >
         <div class="read">
-          <button class="btn btn_read">Read</button>
+          <button class="btn btn_read"
+            ><a
+              href="https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194"
+              id="bo-read"
+              target="_blank"
+              >Read</a
+            ></button
+          >
         </div>
       </section>
     </main>
@@ -120,5 +121,6 @@
     <div class="copyright">
       <p>&copy; 2023 Abdulmejd Kelil. All rights reserved.</p>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
